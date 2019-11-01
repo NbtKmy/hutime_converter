@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" charset="utf-8">
+<title>Calendar converter with HuTime API</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<link rel="stylesheet" type="text/css" href="hutime.css" />
+</head>
+<body>
+<h1>Japanese Calendar Converter</h1>
+<div class="wrapper">
+  <div class="checkbox-area">
+    <form>
+      <input type="checkbox" id="julian">Check for the output according to the Julian calendar.
+      Otherwise the Gregorian calendar is applyed.
+   </form>
+  </div>
+ <div class="selector">
+   <div>Do you want to convert...</div>
+   <select id="time_form">
+    <option value="date">a date?</option>
+    <option value="month">a month?</option>
+    <option value="year">a year?</option>
+    <option value="era">a name of era?</option>
+   </select>
+ </div>
+ <div class="legend">
+   <b>Legend</b>:<br>
+   Japanese time that should be put in the search window can take various forms.<br>
+   <b>date</b>:<br>
+   文政五年四月四日<br>
+   承平五年十月廿一日<br>
+   承和九年壬戌二月二十六日<br>
+   天安元年二月丙申<br>
+   寛治五年十一月朔日<br>
+   推古天皇元年春正月壬寅朔丙辰<br>
+   寛正5年11月26日<br>
+   元禄14年3月14日<br>
+   文化九壬申歳正月廿日<br>
+   天安元年二月丙申<br>
+   <b>month</b>:<br>
+   文化丁丑五月<br>
+   文化九壬申歳正月<br>
+   <b>year</b>:<br>
+   平成元年<br>
+   享保2年<br>
+   昭和廿年<br>
+   文化九壬申歳<br>
+ </div>
+ <div class="search-area">
+     <form id="myform" method="" action="" onsubmit="ons();">
+       <input type="text" id="search-text" placeholder="Put a date/month/year/era in Japanese" />
+       <input type="submit"id="button" value="Convert!" />
+     </form>
+ </div>
+ <div class="search-result">
+       <div id="search-result"></div>
+ </div>
+
+
+
+</div><!-- /.wrapper -->
+
+  <footer>This converter uses the API funktion of the HuTime.<br>
+<a href="http://www.hutime.org">
+<img src="http://www.hutime.org/about/HuTimeBanner.png"
+alt="HuTime" height="31" width="88" />
+</a></footer>
+<script src="hutime.js"></script>
+</body>
+</html>

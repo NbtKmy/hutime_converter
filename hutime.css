@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+
+body {
+  background-color:  #f2eee1;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "IM Fell DW Pica", georgia, serif;
+  font-style: bold;
+  color: #640125;
+  font-size: 200%;
+  text-align: left;
+  margin: 20px;
+  }
+
+.checkbox-area  {
+  background: #ffdab9;
+  width: 50%;
+  font-family: "IM Fell DW Pica", georgia, serif;
+  font-style: normal;
+  color: #640125;
+  text-align: left;
+  margin: 20px;
+  border: 1px solid #cccccc;
+}
+
+.selector {
+  background: #ffdab9;
+  width: 50%;
+  font-family: "IM Fell DW Pica", georgia, serif;
+  font-style: normal;
+  color: #640125;
+  text-align: left;
+  margin: 20px;
+  border: 1px solid #cccccc;
+}
+
+  .legend {
+  background: #f2f2b0;
+  width: 50%;
+  font-family: 'IM Fell DW Pica', georgia, serif, 'Noto Sans JP', sans-serif;
+  font-size: 80%;
+  color: #776150;
+  text-align: left;
+  margin: 20px;
+  border: 1px solid #cccccc;
+}
+
+.search-area {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 20px;
+}
+
+#button {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #640125;
+  font-family: 'IM Fell DW Pica', georgia, serif;
+  font-size: 16px;
+  color: #640125;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#button:hover {
+  background-color: #640125;
+  border-color: #640125;
+  font-family: 'IM Fell DW Pica', georgia, serif;
+  color: #FFF;
+}
+
+.search-result  {
+  background: #fdf5e6;
+  width: 50%;
+  font-family: "IM Fell DW Pica", georgia, serif, 'Noto Sans JP', sans-serif;
+  color: #640125;
+  text-align: left;
+  margin: 20px;
+  border: 1px solid #cccccc;
+}
+
+footer {
+  width: 100%;
+  background: #e4dc8a;
+  padding: 20px;
+  font-family: "IM Fell DW Pica", georgia, serif;
+  color: #640125;
+  position: absolute;
+  bottom: 0;
+}
