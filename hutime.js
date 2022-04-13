@@ -18,7 +18,7 @@ addEventListener('load', function() {
 
 
    //Making URL for HuTime-API
-      apiPart1 = "http://ap.hutime.org/cal/?method=conv&ical=1001.1&itype=date&ival=";
+      apiPart1 = "https://ap.hutime.org/cal/?method=conv&ical=1001.1&itype=date&ival=";
 
 
    if (str == "year") {
@@ -34,7 +34,7 @@ addEventListener('load', function() {
      apiPart1 = apiYear.slice(0, 38) + "ep=be&otype=date&" + apiYear.slice(38);
    }
   else {
-     apiPart1 = "http://ap.hutime.org/cal/?method=conv&ical=1001.1&itype=date&ival=";
+     apiPart1 = "https://ap.hutime.org/cal/?method=conv&ical=1001.1&itype=date&ival=";
    }
 
    if (juliOr) {
